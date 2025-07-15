@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>🍌grams Solver</title>
+
+    <!-- Recommended meta tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+
+    <!-- PyScript CSS -->
+    <link rel="stylesheet" href="https://pyscript.net/releases/2024.1.1/core.css">
+
+    <!-- This script tag bootstraps PyScript -->
+    <script type="module" src="https://pyscript.net/releases/2024.1.1/core.js"></script>
+</head>
+<body>
+    <h1>🍌grams Solver</h1>
+    <button py-click="generate_letters">Random letters</button>
+    <div id="output1"></div>
+    <input type="text" id="letters" placeholder="Type letters here..." />
+    <button py-click="generate_solution">Generate solution</button>
+    <div id="output2", style="font-family: Courier New"></div>
+    <script type="py" src="./main.py" config="./pyscript.toml" terminal></script>
+</body>
+</html>
